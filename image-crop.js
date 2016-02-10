@@ -24,27 +24,31 @@ let xmlPromise = new Promise((resolve, reject)=>{
             resolve(result);
         });
     });
+}).then(xml=>{
+  console.dir(xml.annotation.folder);
+  console.dir(xml.annotation.filename);
+
 });
 
 //wait until both are finished
-Promise.all([imPromise, xmlPromise]).then(res=>{
-    let im = res[0],
-        xml = res[1];
-    //console.log(res);
-    xml.annotation.object.forEach(obj=>{
-      obj.bndbox.forEach(bndbox=>{
-        let box = [
-          bndbox.xmin[0],
-          bndbox.ymin[0],
-          bndbox.xmax[0]-bndbox.xmin[0],
-          bndbox.ymax[0]-bndbox.ymin[0],
-        ].map(Number);
-        im.clone()
-          .crop(...box)
-          .resize(256, 256)
-          .write('000000cropped.JPEG');
-      });
-    });
-}).catch(err=>{
-    console.error(err);
-});
+//Promise.all([imPromise, xmlPromise]).then(res=>{
+//    let im = res[0],
+//        xml = res[1];
+//    //console.log(res);
+//    xml.annotation.object.forEach(obj=>{
+//      obj.bndbox.forEach(bndbox=>{
+//        let box = [
+//          bndbox.xmin[0],
+//          bndbox.ymin[0],
+//          bndbox.xmax[0]-bndbox.xmin[0],
+//          bndbox.ymax[0]-bndbox.ymin[0],
+//        ].map(Number);
+//        im.clone()
+//          .crop(...box)
+//          .resize(256, 256)
+//          .write('000000cropped.JPEG');
+//      });
+//    });
+//}).catch(err=>{
+//    console.error(err);
+//});

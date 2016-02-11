@@ -26,8 +26,9 @@ fs.readFileSync(path.join(devkit_dir, 'map_vid.txt'), 'utf8')
 //read the imagesets
 console.log("read imagesets");
 let imagesets=fs.readdirSync(imageset_dir).filter(item=>{
-  return '.txt'==path.extname(item);
+  return '.txt'==path.extname(item) && 'test.txt' != path.basename(item);
 });
+//throw imagesets;
 
 let write_streames={
   'train':fs.createWriteStream('train.txt',{
@@ -128,7 +129,7 @@ let root_promise=Promise.all(imagesets.map(imageset=>{
 })).then(()=>{
   console.log("the end of execution!");
   write_streames['train'].end();
-  write_streames['test'].end();
+ // write_streames['test'].end();
   write_streames['val'].end();
 }).catch(err=>{
   throw err;

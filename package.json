@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "jimp": "^0.2.21",
+    "mkdirp": "^0.5.1",
     "xml2js": "^0.4.16"
   }
 }

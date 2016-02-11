@@ -1,2 +1,0 @@
-/media/qk/Coco Hard Drive/Object Detection From Video/ILSVRC2015/Data/VID/train/ILSVRC2015_VID_train_0000/ILSVRC2015_train_00000000
-/media/qk/Coco Hard Drive/Object Detection From Video/ILSVRC2015/Annotations/VID/train/ILSVRC2015_VID_train_0000/ILSVRC2015_train_00000000

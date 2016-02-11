@@ -1,0 +1,82 @@
+.
+├── Annotations
+│   └── VID
+│       ├── train
+│       └── val
+├── Data
+│   └── VID
+│       ├── snippets
+│       ├── test
+│       ├── train
+│       └── val
+├── devkit
+│   ├── COPYING
+│   ├── data
+│   │   ├── ILSVRC2015_clsloc_validation_blacklist.txt
+│   │   ├── ILSVRC2015_clsloc_validation_ground_truth.mat
+│   │   ├── ILSVRC2015_clsloc_validation_ground_truth.txt
+│   │   ├── ILSVRC2015_det_validation_blacklist.txt
+│   │   ├── ILSVRC2015_det_validation_ground_truth.mat
+│   │   ├── ILSVRC2015_vid_validation_ground_truth.mat
+│   │   ├── map_clsloc.txt
+│   │   ├── map_det.txt
+│   │   ├── map_vid.txt
+│   │   ├── meta_clsloc.mat
+│   │   ├── meta_det.mat
+│   │   └── meta_vid.mat
+│   ├── evaluation
+│   │   ├── compute_overlap.m
+│   │   ├── demo_eval_clsloc.m
+│   │   ├── demo_eval_det.m
+│   │   ├── demo_eval_vid.m
+│   │   ├── demo.val.pred.det.txt
+│   │   ├── demo.val.pred.loc.txt
+│   │   ├── demo.val.pred.vid.txt
+│   │   ├── eval_clsloc.m
+│   │   ├── eval_detection.m
+│   │   ├── eval_vid_detection.m
+│   │   ├── get_class2node.m
+│   │   ├── make_hash.m
+│   │   ├── VOCap.m
+│   │   ├── VOCreadrecxml.m
+│   │   ├── VOCreadxml.m
+│   │   └── VOCxml2struct.m
+│   └── readme.txt
+└── ImageSets
+    └── VID
+        ├── test.txt
+        ├── train_10.txt
+        ├── train_11.txt
+        ├── train_12.txt
+        ├── train_13.txt
+        ├── train_14.txt
+        ├── train_15.txt
+        ├── train_16.txt
+        ├── train_17.txt
+        ├── train_18.txt
+        ├── train_19.txt
+        ├── train_1.txt
+        ├── train_20.txt
+        ├── train_21.txt
+        ├── train_22.txt
+        ├── train_23.txt
+        ├── train_24.txt
+        ├── train_25.txt
+        ├── train_26.txt
+        ├── train_27.txt
+        ├── train_28.txt
+        ├── train_29.txt
+        ├── train_2.txt
+        ├── train_30.txt
+        ├── train_3.txt
+        ├── train_4.txt
+        ├── train_5.txt
+        ├── train_6.txt
+        ├── train_7.txt
+        ├── train_8.txt
+        ├── train_9.txt
+        └── val.txt
+
+15 directories, 62 files
+/media/qk/Coco Hard Drive/Object Detection From Video/ILSVRC2015/Data/VID/train/ILSVRC2015_VID_train_0000/ILSVRC2015_train_00000000
+/media/qk/Coco Hard Drive/Object Detection From Video/ILSVRC2015/Annotations/VID/train/ILSVRC2015_VID_train_0000/ILSVRC2015_train_00000000
